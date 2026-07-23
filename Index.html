@@ -3,131 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reward Resource Hub - Shopping Perk Evaluation</title>
+    <title>Family Dollar $500 Reward Opportunity</title>
     
     <!-- Inline Favicon (Prevents Netlify 404 Logs) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         /* GPU-Accelerated Animations */
-        @keyframes pulse-subtle {
+        @keyframes pulse-red {
             0%, 100% { 
                 transform: scale(1); 
-                box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.4); 
+                box-shadow: 0 10px 30px -5px rgba(220, 38, 38, 0.5), 0 0 15px rgba(245, 158, 11, 0.3); 
             }
             50% { 
                 transform: scale(1.02); 
-                box-shadow: 0 20px 35px -5px rgba(34, 197, 94, 0.6); 
+                box-shadow: 0 20px 40px -5px rgba(220, 38, 38, 0.8), 0 0 25px rgba(245, 158, 11, 0.5); 
             }
         }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
+            50% { transform: translateY(-6px); }
         }
-        .animate-pulse-btn {
-            animation: pulse-subtle 2.5s infinite ease-in-out;
+        .animate-pulse-red {
+            animation: pulse-red 2.2s infinite ease-in-out;
             will-change: transform;
         }
         .animate-float {
-            animation: float 4s infinite ease-in-out;
+            animation: float 3.5s infinite ease-in-out;
             will-change: transform;
         }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-red-600 selection:text-white overflow-x-hidden">
+
+    <!-- Announcement Bar -->
+    <div class="w-full bg-gradient-to-r from-red-600 via-amber-500 to-red-600 py-1.5 px-4 text-center text-xs sm:text-sm font-black text-slate-950 tracking-wide uppercase shadow-md">
+        🎉 Promotional Reward Alert: $500 Family Dollar Vouchers Available!
+    </div>
 
     <!-- Header Navigation (Standardized Container: max-w-4xl) -->
-    <header class="w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
+    <header class="w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
             <div class="flex items-center space-x-2.5">
-                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center font-bold text-white shadow-md shadow-emerald-500/20">
-                    🎁
+                <div class="w-9 h-9 rounded-xl bg-red-600 flex items-center justify-center font-black text-white text-lg shadow-md shadow-red-600/30">
+                    FD
                 </div>
-                <span class="font-bold text-lg tracking-tight text-white">Reward<span class="text-emerald-400">Vault</span></span>
+                <span class="font-black text-xl tracking-tight text-white">Cart<span class="text-amber-400">RewardZone</span></span>
             </div>
-            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 tracking-wide inline-flex items-center">
-                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Active Offer
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 inline-flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live Promotion
             </span>
         </div>
     </header>
 
-    <!-- Main Content (Standardized Container: max-w-4xl, py-12 sm:py-20) -->
-    <main class="flex-1 w-full max-w-4xl mx-auto px-4 py-12 sm:py-20 flex flex-col justify-center items-center text-center">
+    <!-- Main Content (Standardized Container: max-w-4xl) -->
+    <main class="flex-1 w-full max-w-4xl mx-auto px-4 py-10 sm:py-16 flex flex-col justify-center items-center text-center">
 
-        <!-- Trust Signal: Shopping Gift Icon -->
-        <div class="mb-6 text-emerald-400 bg-emerald-500/10 p-4 rounded-full border border-emerald-500/20 shadow-lg shadow-emerald-500/10 animate-float">
-            <svg class="w-12 h-12 sm:w-16 sm:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V6a2 2 0 10-2 2h2zm0 13C10.832 21 2 13.5 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 5-8.832 12.5-10 12.5z"></path>
-            </svg>
-        </div>
-
-        <!-- Top Badge -->
-        <div class="mb-6 inline-flex items-center space-x-2 bg-emerald-950/60 border border-emerald-500/40 px-3.5 py-1.5 rounded-full text-emerald-200 text-xs sm:text-sm font-medium shadow-sm">
-            <span>🛒 Retail Consumer Promotion</span>
-        </div>
-
-        <!-- Headline & Subtitle -->
-        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4 max-w-3xl">
-            Check Your Eligibility For A <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300">$500 Family Dollar</span> Reward!
-        </h1>
-        
-        <p class="text-slate-300 sm:text-slate-400 text-sm sm:text-lg max-w-xl mb-10 leading-relaxed">
-            Take part in consumer research, evaluate available promotional offers, and complete sponsor requirements to verify your reward eligibility.
-        </p>
-
-        <!-- 3-Step Process Card -->
-        <div class="w-full bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5 sm:p-8 mb-10 shadow-2xl backdrop-blur-sm text-left">
-            <h2 class="text-base sm:text-lg font-bold text-white mb-6 flex items-center gap-2">
-                <span>📋</span> How To Claim Your Spot:
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <!-- Step 1 -->
-                <div class="flex flex-col items-start bg-slate-900/70 p-4 rounded-xl border border-slate-800/80">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 font-bold text-base flex items-center justify-center mb-2.5">1</div>
-                    <h3 class="font-semibold text-white text-sm sm:text-base mb-1">Click Start</h3>
-                    <p class="text-xs text-slate-400 leading-normal">Tap the green button below to access the official sponsor portal.</p>
+        <!-- Visual Voucher Card for Family Dollar -->
+        <div class="animate-float w-full max-w-sm bg-gradient-to-r from-amber-400 via-red-500 to-red-600 p-1 rounded-2xl shadow-2xl mb-6">
+            <div class="bg-slate-900 rounded-[14px] p-5 flex items-center justify-between border border-amber-400/30 relative overflow-hidden">
+                <div class="text-left">
+                    <span class="text-[10px] font-extrabold tracking-widest text-amber-400 uppercase block">Promotional Voucher</span>
+                    <span class="text-2xl font-black text-white tracking-tight">Family Dollar</span>
+                    <span class="text-xs text-slate-400 block mt-0.5">Shopping Pass</span>
                 </div>
-                <!-- Step 2 -->
-                <div class="flex flex-col items-start bg-slate-900/70 p-4 rounded-xl border border-slate-800/80">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 font-bold text-base flex items-center justify-center mb-2.5">2</div>
-                    <h3 class="font-semibold text-white text-sm sm:text-base mb-1">Enter Email</h3>
-                    <p class="text-xs text-slate-400 leading-normal">Provide your valid email address to verify your location & entry.</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="flex flex-col items-start bg-slate-900/70 p-4 rounded-xl border border-slate-800/80">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 font-bold text-base flex items-center justify-center mb-2.5">3</div>
-                    <h3 class="font-semibold text-white text-sm sm:text-base mb-1">Complete Steps</h3>
-                    <p class="text-xs text-slate-400 leading-normal">Follow the advertiser guidelines to qualify for your reward.</p>
+                <div class="bg-amber-400 text-slate-950 font-black text-3xl px-3.5 py-1.5 rounded-xl shadow-lg">
+                    $500
                 </div>
             </div>
         </div>
 
-        <!-- Balanced CTA Container -->
+        <!-- Headline & Subtitle -->
+        <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-3 max-w-2xl">
+            Claim Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-500">$500 Family Dollar</span> Reward!
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mb-8 leading-relaxed">
+            Participate in our shopper promotional distribution. Follow 3 simple steps on the official sponsor page to verify your entry!
+        </p>
+
+        <!-- Static 3-Step Overview Grid (Visual Guide Only) -->
+        <div class="w-full bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 mb-8 shadow-2xl backdrop-blur-md text-left">
+            <h2 class="text-base sm:text-lg font-bold text-white mb-6 flex items-center gap-2">
+                <span>📋</span> How To Secure Your Entry:
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-start bg-slate-950/80 p-4 rounded-2xl border border-slate-800">
+                    <div class="w-8 h-8 rounded-full bg-red-600/20 text-red-400 border border-red-500/30 font-black text-sm flex items-center justify-center mb-2.5">1</div>
+                    <h3 class="font-bold text-white text-sm mb-1">Click Below</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Tap the main button below to access the official sponsor portal.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-start bg-slate-950/80 p-4 rounded-2xl border border-slate-800">
+                    <div class="w-8 h-8 rounded-full bg-red-600/20 text-red-400 border border-red-500/30 font-black text-sm flex items-center justify-center mb-2.5">2</div>
+                    <h3 class="font-bold text-white text-sm mb-1">Enter Email</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Submit your valid email to confirm location & claim eligibility.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-start bg-slate-950/80 p-4 rounded-2xl border border-slate-800">
+                    <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 font-black text-sm flex items-center justify-center mb-2.5">3</div>
+                    <h3 class="font-bold text-white text-sm mb-1">Unlock Pass</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Complete advertiser requirements to finalize your $500 voucher.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Single Call-To-Action Button -->
         <div class="w-full max-w-xl flex flex-col items-center">
             <a href="https://www.af9m8trk.com/QLJ11S9T/TTR12295/" 
                target="_blank" 
                rel="noopener noreferrer" 
-               class="animate-pulse-btn inline-flex items-center justify-center w-full px-6 py-4 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-extrabold text-base sm:text-xl rounded-xl shadow-lg transition-all duration-300 transform active:scale-95 group">
-                <span>CHECK ELIGIBILITY NOW</span>
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
+               class="animate-pulse-red inline-flex items-center justify-center w-full px-8 py-5 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-black text-lg sm:text-2xl rounded-2xl shadow-2xl transition-all duration-300 transform active:scale-95 group tracking-wide">
+                <span>CLAIM YOUR $500 REWARD NOW →</span>
             </a>
-            <p class="text-xs text-slate-400 mt-3">⚡ Free registration • Takes less than 60 seconds</p>
+            <p class="text-xs text-slate-400 mt-3 font-medium">⚡ Fast & Free Setup • Instant Registration Page</p>
         </div>
+
     </main>
 
     <!-- Footer / Compliance Disclaimer -->
     <footer class="w-full border-t border-slate-800/80 py-6 bg-slate-950 text-center text-xs text-slate-400 px-4 mt-auto">
         <div class="max-w-4xl mx-auto space-y-2">
-            <p>© 2026 Reward Resource Portal. All rights reserved.</p>
+            <p>© 2026 CartRewardZone Portal. All rights reserved.</p>
             <p class="leading-relaxed text-slate-500">
-                <strong>Disclaimer:</strong> This website is an independent promotional portal and is not directly affiliated with, sponsored by, or endorsed by Family Dollar or its parent company. All trademarks remain the property of their respective owners. Completing required advertiser steps on the destination page is required to qualify for promotional rewards.
+                <strong>Disclaimer:</strong> This website is an independent promotional portal and is not directly sponsored by, affiliated with, or endorsed by Family Dollar or any displayed retailer marks. Completing advertiser requirements on the destination page is required to finalize entry and verify eligibility.
             </p>
         </div>
     </footer>
+
 </body>
 </html>
